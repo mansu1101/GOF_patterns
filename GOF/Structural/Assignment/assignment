@@ -1,0 +1,59 @@
+1. Your are a developer of a SDK to support authentication with your application. consider your application is using a
+customized authentication protocol. Design the class structure of integration layer of SDK which will allow
+third party applications to use it. Note that third party applications should not be able to modify your
+authentication protocol provided by the SDK.
+
+2. Batman is a developer working for a client on ShopInventory and he gets Product details from some third-party system say “X”, he has implemented all the code to consume Product details from “X” system and code is working fine, obviously he is very happy and clients too.
+
+Suddenly one day Client requests  Batman to change the third-party system from “X” to “Y”.
+Now Batman checks his code, he could find that lot of classes are using “X” system objects in his code and “Y” system objects are not compatible with his code.
+
+If he starts changing all the classes wherever “X” system objects are used, it becomes like he is going to change lot of classes which are already tested, proven and working fine in Production.
+
+What Batman has to do now to accommodate client’s requirement of using “Y” system without doing much of a change in his code?
+
+
+3. Design class structure for controller of a Coffee brewing machine. The controller should dispense beverages :
+latte, cappuccino, espresso, mocha on the press of respective buttons.
+
+Ex:
+
+espresso = Coffee + hot water
+
+latte = Coffee + hot water + milk
+
+Note: Each Coffee machine should be configurable to dispense one or more beverages from the list independently.
+
+Client(endUser) =  decorator
+Machine = builder
+
+4. Consider you are working on an API development to support different types of authentication methods :
+ OpenID Connect,
+ HTTP Basic Authentication, Bearer Token Authentication.Your job is to design an API for developers to minimize their
+ effort in integrating these authentication types with their application. Also keep in mind that there can be some
+ applications/developers who don’t follow standard flow, instead they utilize few steps and build their own customized
+ ones. Your application should allow access to low-level APIs as well to support customization of standard
+ authentication methods.
+
+Eg. These are different low level methods required for OpenIDConnect
+setClientId
+setSecretKey
+setScope
+setRedirectURI
+setCodeVerifier
+setClientCredentials
+setResponseType
+getAuthorizationCode
+getBearerToken
+getAccessToken
+getIDToken
+getClaims
+parseClaims
+revokeToken
+refreshToken
+validateResponse
+createState
+createCodeChallenge
+
+Note : Focus on how your APIs can be used by developer and not on implementation of these authentication types
+

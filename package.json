@@ -1,0 +1,132 @@
+{
+  "name": "redfort",
+  "description": "An Application for authentication and authorization",
+  "main": "dist/app.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "version": "0.2.2",
+  "private": false,
+  "author": "Jeff Potter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpotts18/mean-stack-relational.git"
+  },
+  "engines": {
+    "node": "4.2.x",
+    "npm": "2.14.x"
+  },
+  "scripts": {
+    "start": "node dist/app.js",
+    "backEndTests": "bash scripts/unit_test.sh",
+    "coverage": "node node_modules/nyc/bin/nyc node_modules/mocha/bin/_mocha --opts ./mocha.opts",
+    "test": "NODE_ENV=test node node_modules/nyc/bin/nyc node_modules/mocha/bin/_mocha --opts ./mocha.opts",
+    "build": "node node_modules/gulp/bin/gulp build",
+    "postinstall": "npm run build"
+  },
+  "nyc": {
+    "include": [
+      "server"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "check-coverage": true,
+    "statements": 35,
+    "functions": 35,
+    "branches": 25,
+    "lines": 35,
+    "sourceMap": false,
+    "instrument": true
+  },
+  "pre-commit": [
+    "backEndTests"
+  ],
+  "dependencies": {
+    "@types/express": "4.0.36",
+    "@types/node": "8.0.16",
+    "@types/nodemailer": "^6.4.0",
+    "@types/sinon": "^7.0.13",
+    "async": "2.4.1",
+    "aws-sdk": "^2.1.35",
+    "bcryptjs": "2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect": "^3.6.6",
+    "connect-flash": "0.1.1",
+    "cookie-parser": "1.4.0",
+    "core-js": "2.4.1",
+    "cuid": "1.3.8",
+    "dts-generator": "2.1.0",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.16.1",
+    "grunt": "^1.0.4",
+    "grunt-cli": "1.2.0",
+    "grunt-copy": "0.1.0",
+    "http-status-codes": "1.1.6",
+    "ipware": "0.0.7",
+    "jshint-stylish": "2.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "line-reader": "0.4.0",
+    "lodash": ">=4.17.11",
+    "mysql": "^2.17.1",
+    "mysql2": "1.4.2",
+    "nconf": "0.8.2",
+    "nodemailer": "^6.4.2",
+    "object-assign": "4.1.0",
+    "passport": "0.3.2",
+    "passport-ldapauth": "0.6.0",
+    "passport-local": "1.0.0",
+    "path": "0.12.7",
+    "pm2": "^3.5.0",
+    "process": "0.11.2",
+    "proxyquire": "1.7.3",
+    "proxyrequire": "^1.0.15",
+    "redfort-sdk": "^1.0.47",
+    "request": "^2.88.0",
+    "rxjs": "5.4.2",
+    "secure-key-store": "1.0.3",
+    "sequelize": "^5.8.5",
+    "sequelize-json-schema": "1.2.0",
+    "swagger-jsdoc": "^3.2.9",
+    "swagger-tools": "^0.10.3",
+    "systemjs": "0.19.40",
+    "tsuml": "0.0.1-alpha.8",
+    "type-of-is": "3.4.0",
+    "winston": "^2.3.0",
+    "winston-daily-rotate-file": "^1.4.0",
+    "zone.js": "0.6.26"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.1",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "chai-exclude": "^2.0.2",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-nodemon": "0.5.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-mocha-test": "latest",
+    "grunt-ts": "^6.0.0-beta.22",
+    "grunt-tslint": "5.0.1",
+    "gulp": "^4.0.0",
+    "gulp-tslint": "8.1.2",
+    "gulp-typescript": "^4.0.2",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "sinon": "^7.4.1",
+    "ts-node": "3.3.0",
+    "tslint": "^5.5.0",
+    "typescript": "^3.1.6"
+  }
+}

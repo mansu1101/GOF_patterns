@@ -1,78 +1,78 @@
 # GOF_patterns
 #Why do we need design patterns?
---> _Solve comman problems like._
+--> _Solve common problems like._
 
-  1) **How to properly create a class**
+1) How to properly create a class.
   
-  2) **How to intanita an object**
+2) How to instantiate an object.
   
-  3) **How to intract b/w objects.**
+3) How to interact b/w objects.
   
-  4) **How to write loosely copuled code.**
+4) How to write loosely coupled code.
   
-  5) **How to write resuable code.**
+5) How to write reusable code.
 
 #What is a design pattern?
 
- 1) well defined solution to a comman problem.
+1) Well defined solution to a common problem.
 
- 2) Industry Standerd Approch
+2) Industry standard Approach.
  
- 3) Template, not a solution
+3) Template, not a solution.
 
- 4) Language independent
+4) Language independent.
 
 #What is the benefits of design patterns?
-1) Robust code
+1) Robust code.
 
-2) Code resuablility
+2) Code re-usability.
 
-3) High mantainability 
+3) High maintainability. 
 
-4) Reduce total cost of Ownership
+4) Reduce total cost of Ownership.
 
-5) loosely coupled application.
+5) Loosely coupled application.
 
 #Types of design patterns 
 
-**Creational:**
+`Creational:`
 
-        1) Singleton
-        2) Factory
-        3) Abstract Factory
-        4) Builder
-        5) Prototype
+    1. Singleton
+    2. Factory
+    3. Abstract Factory
+    4. Builder
+    5. Prototype
 
-`**Structural:**` 
+`Structural:` 
 
-        6) Adapter
-        7) Composite
-        8) Proxy
-        9) fly weight
-        10)Facade
-        11)Bridge
-        12)Decorator
+    6. Adapter
+    7. Composite
+    8. Proxy
+    9. fly weight
+    10. Facade
+    11. Bridge
+    12. Decorator
 
-`**Behavioural:** `
+`Behavioural:`
 
-        13)Template Method
-        14)Mediator
-        15)Chain of Responsibility
-        16)Observers
-        17)Strategy
-        18)Command
-        19)State 
-        20)Visitor
-        21)Iterator
-        22)Interpreter
-        23)Memento
+    13. Template Method
+    14. Mediator
+    15. Chain of Responsibility
+    16. Observers
+    17. Strategy
+    18. Command
+    19. State 
+    20. Visitor
+    21. Iterator
+    22. Interpreter
+    23. Memento
 
 
 #Design Patterns Best Practices 
-1) Keep it simple
-2) Excess of everything is bad
-3) Focuse on loosely coupled code.
-4) Design first, Code later 
+1) Keep it simple.
+2) Excess of everything is bad.
+3) Focus on loosely coupled code.
+4) Design first, Code later.
 
 #Why we should use build pattern?
 There are three major issues with Factory and Abstract Factory design patterns when the Object contains a lot of attributes.
@@ -82,4 +82,3 @@ There are three major issues with Factory and Abstract Factory design patterns w
 
 
 
-         

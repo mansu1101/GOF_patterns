@@ -1,5 +1,5 @@
 # GOF_patterns
-#Why do we need design patterns?
+## Why do we need design patterns?
 --> _Solve common problems like._
 
 1) How to properly create a class.
@@ -12,7 +12,7 @@
   
 5) How to write reusable code.
 
-#What is a design pattern?
+## What is a design pattern?
 
 1) Well defined solution to a common problem.
 
@@ -22,7 +22,7 @@
 
 4) Language independent.
 
-#What is the benefits of design patterns?
+## What is the benefits of design patterns?
 1) Robust code.
 
 2) Code re-usability.
@@ -33,7 +33,7 @@
 
 5) Loosely coupled application.
 
-#Types of design patterns 
+## Types of design patterns 
 
 `Creational:`
 
@@ -68,13 +68,13 @@
     23. Memento
 
 
-#Design Patterns Best Practices 
+## Design Patterns Best Practices 
 1) Keep it simple.
 2) Excess of everything is bad.
 3) Focus on loosely coupled code.
 4) Design first, Code later.
 
-#Why we should use build pattern?
+## Why we should use build pattern?
 There are three major issues with Factory and Abstract Factory design patterns when the Object contains a lot of attributes.
 1) Too Many arguments to pass from client program to the Factory class that can be error prone because most of the time, the type of arguments are same and from client side its hard to maintain the order of the argument.
 2) Some of the parameters might be optional but in Factory pattern, we are forced to send all the parameters and optional parameters need to send as NULL.
